@@ -1,13 +1,13 @@
 #Computer Science Theory
 
-I was resolving some examples of this complicate subject.
+I resolved some examples of this subject, it might be usefully to you.
 
 ## Setup Jflap
 
-I have upload the JFlap software under the dir jflap if you want to use it:
+I have uploaded the JFlap software under the directory jflap if you want to use it:
 
  - java -jar JFLAP8_beta.jar
   
 
 ## Testing examples
- You can test each file, openning and giving a string
+ You can test it openning each file and giving a string input
