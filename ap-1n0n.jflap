@@ -20,72 +20,72 @@
 					<id>2</id>
 				</state>
 			</structure>
-			<structure type="BOS_symbol">
-				<value>Z</value>
-			</structure>
-			<structure type="transition_set">
-				<transition>
-					<pop/>
-					<input>0</input>
-					<from>
-						<name>q0</name>
-						<id>0</id>
-					</from>
-					<to>
-						<name>q0</name>
-						<id>0</id>
-					</to>
-					<push>a</push>
-				</transition>
-				<transition>
-					<pop>a</pop>
-					<input>1</input>
-					<from>
-						<name>q0</name>
-						<id>0</id>
-					</from>
-					<to>
-						<name>q1</name>
-						<id>1</id>
-					</to>
-					<push/>
-				</transition>
-				<transition>
-					<pop>a</pop>
-					<input>1</input>
-					<from>
-						<name>q1</name>
-						<id>1</id>
-					</from>
-					<to>
-						<name>q1</name>
-						<id>1</id>
-					</to>
-					<push/>
-				</transition>
-				<transition>
-					<pop>Z</pop>
-					<input/>
-					<from>
-						<name>q1</name>
-						<id>1</id>
-					</from>
-					<to>
-						<name>q2</name>
-						<id>2</id>
-					</to>
-					<push/>
-				</transition>
-			</structure>
 			<structure type="start_state">
 				<state>
 					<name>q0</name>
 					<id>0</id>
 				</state>
 			</structure>
+			<structure type="BOS_symbol">
+				<value>Z</value>
+			</structure>
 			<structure type="stack_alph">
 				<symbol>Z</symbol>
 				<symbol>a</symbol>
+			</structure>
+			<structure type="transition_set">
+				<transition>
+					<to>
+						<name>q0</name>
+						<id>0</id>
+					</to>
+					<input>0</input>
+					<pop/>
+					<from>
+						<name>q0</name>
+						<id>0</id>
+					</from>
+					<push>a</push>
+				</transition>
+				<transition>
+					<to>
+						<name>q1</name>
+						<id>1</id>
+					</to>
+					<input>1</input>
+					<pop>a</pop>
+					<from>
+						<name>q0</name>
+						<id>0</id>
+					</from>
+					<push/>
+				</transition>
+				<transition>
+					<to>
+						<name>q1</name>
+						<id>1</id>
+					</to>
+					<input>1</input>
+					<pop>a</pop>
+					<from>
+						<name>q1</name>
+						<id>1</id>
+					</from>
+					<push/>
+				</transition>
+				<transition>
+					<to>
+						<name>q2</name>
+						<id>2</id>
+					</to>
+					<input/>
+					<pop>Z</pop>
+					<from>
+						<name>q1</name>
+						<id>1</id>
+					</from>
+					<push/>
+				</transition>
 			</structure>
 		</structure>
 		<state_point_map>
@@ -99,8 +99,8 @@
 			<state_point>
 				<state>1</state>
 				<point>
-					<x>309.0</x>
-					<y>109.0</y>
+					<x>321.0</x>
+					<y>92.0</y>
 				</point>
 			</state_point>
 			<state_point>
@@ -121,27 +121,27 @@
 				</point>
 			</control_point>
 			<control_point>
-				<from>0</from>
-				<to>1</to>
-				<point>
-					<x>228.0</x>
-					<y>109.0</y>
-				</point>
-			</control_point>
-			<control_point>
-				<from>1</from>
-				<to>1</to>
-				<point>
-					<x>309.0</x>
-					<y>39.0</y>
-				</point>
-			</control_point>
-			<control_point>
 				<from>1</from>
 				<to>2</to>
 				<point>
-					<x>394.5</x>
-					<y>106.5</y>
+					<x>400.5</x>
+					<y>98.0</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>1</from>
+				<to>1</to>
+				<point>
+					<x>321.0</x>
+					<y>22.0</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>0</from>
+				<to>1</to>
+				<point>
+					<x>234.0</x>
+					<y>100.5</y>
 				</point>
 			</control_point>
 		</control_point_map>

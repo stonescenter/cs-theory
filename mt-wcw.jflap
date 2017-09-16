@@ -2,6 +2,25 @@
 	<structure type="transition_graph">
 		<structure mode="Default mode" type="turing">
 			<tapes>1</tapes>
+			<structure type="start_state">
+				<state>
+					<name>q0</name>
+					<id>0</id>
+				</state>
+			</structure>
+			<structure type="tape_alph">
+				<symbol>0</symbol>
+				<symbol>1</symbol>
+				<symbol>X</symbol>
+				<symbol>c</symbol>
+				<symbol>□</symbol>
+			</structure>
+			<structure type="final_states">
+				<state>
+					<name>q7</name>
+					<id>7</id>
+				</state>
+			</structure>
 			<structure type="transition_set">
 				<transition>
 					<move0>R</move0>
@@ -10,7 +29,7 @@
 						<id>1</id>
 					</to>
 					<write0>X</write0>
-					<read0>a</read0>
+					<read0>0</read0>
 					<from>
 						<name>q0</name>
 						<id>0</id>
@@ -23,8 +42,22 @@
 						<name>q4</name>
 						<id>4</id>
 					</to>
-					<write0>Y</write0>
-					<read0>Y</read0>
+					<write0>X</write0>
+					<read0>1</read0>
+					<from>
+						<name>q0</name>
+						<id>0</id>
+					</from>
+					<tapes>1</tapes>
+				</transition>
+				<transition>
+					<move0>R</move0>
+					<to>
+						<name>q5</name>
+						<id>5</id>
+					</to>
+					<write0>c</write0>
+					<read0>c</read0>
 					<from>
 						<name>q0</name>
 						<id>0</id>
@@ -37,8 +70,8 @@
 						<name>q1</name>
 						<id>1</id>
 					</to>
-					<write0>Y</write0>
-					<read0>Y</read0>
+					<write0>0</write0>
+					<read0>0</read0>
 					<from>
 						<name>q1</name>
 						<id>1</id>
@@ -51,8 +84,8 @@
 						<name>q1</name>
 						<id>1</id>
 					</to>
-					<write0>a</write0>
-					<read0>a</read0>
+					<write0>1</write0>
+					<read0>1</read0>
 					<from>
 						<name>q1</name>
 						<id>1</id>
@@ -65,8 +98,8 @@
 						<name>q2</name>
 						<id>2</id>
 					</to>
-					<write0>Y</write0>
-					<read0>b</read0>
+					<write0>c</write0>
+					<read0>c</read0>
 					<from>
 						<name>q1</name>
 						<id>1</id>
@@ -79,22 +112,8 @@
 						<name>q2</name>
 						<id>2</id>
 					</to>
-					<write0>Z</write0>
-					<read0>Z</read0>
-					<from>
-						<name>q2</name>
-						<id>2</id>
-					</from>
-					<tapes>1</tapes>
-				</transition>
-				<transition>
-					<move0>R</move0>
-					<to>
-						<name>q2</name>
-						<id>2</id>
-					</to>
-					<write0>b</write0>
-					<read0>b</read0>
+					<write0>X</write0>
+					<read0>X</read0>
 					<from>
 						<name>q2</name>
 						<id>2</id>
@@ -107,8 +126,8 @@
 						<name>q3</name>
 						<id>3</id>
 					</to>
-					<write0>Z</write0>
-					<read0>c</read0>
+					<write0>X</write0>
+					<read0>0</read0>
 					<from>
 						<name>q2</name>
 						<id>2</id>
@@ -135,8 +154,8 @@
 						<name>q3</name>
 						<id>3</id>
 					</to>
-					<write0>Y</write0>
-					<read0>Y</read0>
+					<write0>0</write0>
+					<read0>0</read0>
 					<from>
 						<name>q3</name>
 						<id>3</id>
@@ -149,8 +168,8 @@
 						<name>q3</name>
 						<id>3</id>
 					</to>
-					<write0>Z</write0>
-					<read0>Z</read0>
+					<write0>1</write0>
+					<read0>1</read0>
 					<from>
 						<name>q3</name>
 						<id>3</id>
@@ -163,8 +182,8 @@
 						<name>q3</name>
 						<id>3</id>
 					</to>
-					<write0>a</write0>
-					<read0>a</read0>
+					<write0>X</write0>
+					<read0>X</read0>
 					<from>
 						<name>q3</name>
 						<id>3</id>
@@ -177,8 +196,8 @@
 						<name>q3</name>
 						<id>3</id>
 					</to>
-					<write0>b</write0>
-					<read0>b</read0>
+					<write0>c</write0>
+					<read0>c</read0>
 					<from>
 						<name>q3</name>
 						<id>3</id>
@@ -191,8 +210,8 @@
 						<name>q4</name>
 						<id>4</id>
 					</to>
-					<write0>Y</write0>
-					<read0>Y</read0>
+					<write0>X</write0>
+					<read0>0</read0>
 					<from>
 						<name>q4</name>
 						<id>4</id>
@@ -202,28 +221,14 @@
 				<transition>
 					<move0>R</move0>
 					<to>
-						<name>q5</name>
-						<id>5</id>
+						<name>q4</name>
+						<id>4</id>
 					</to>
-					<write0>Z</write0>
-					<read0>Z</read0>
+					<write0>1</write0>
+					<read0>1</read0>
 					<from>
 						<name>q4</name>
 						<id>4</id>
-					</from>
-					<tapes>1</tapes>
-				</transition>
-				<transition>
-					<move0>R</move0>
-					<to>
-						<name>q5</name>
-						<id>5</id>
-					</to>
-					<write0>Z</write0>
-					<read0>Z</read0>
-					<from>
-						<name>q5</name>
-						<id>5</id>
 					</from>
 					<tapes>1</tapes>
 				</transition>
@@ -233,11 +238,67 @@
 						<name>q6</name>
 						<id>6</id>
 					</to>
+					<write0>c</write0>
+					<read0>c</read0>
+					<from>
+						<name>q4</name>
+						<id>4</id>
+					</from>
+					<tapes>1</tapes>
+				</transition>
+				<transition>
+					<move0>R</move0>
+					<to>
+						<name>q5</name>
+						<id>5</id>
+					</to>
+					<write0>X</write0>
+					<read0>X</read0>
+					<from>
+						<name>q5</name>
+						<id>5</id>
+					</from>
+					<tapes>1</tapes>
+				</transition>
+				<transition>
+					<move0>R</move0>
+					<to>
+						<name>q7</name>
+						<id>7</id>
+					</to>
 					<write0>□</write0>
 					<read0>□</read0>
 					<from>
 						<name>q5</name>
 						<id>5</id>
+					</from>
+					<tapes>1</tapes>
+				</transition>
+				<transition>
+					<move0>L</move0>
+					<to>
+						<name>q3</name>
+						<id>3</id>
+					</to>
+					<write0>X</write0>
+					<read0>1</read0>
+					<from>
+						<name>q6</name>
+						<id>6</id>
+					</from>
+					<tapes>1</tapes>
+				</transition>
+				<transition>
+					<move0>R</move0>
+					<to>
+						<name>q6</name>
+						<id>6</id>
+					</to>
+					<write0>X</write0>
+					<read0>X</read0>
+					<from>
+						<name>q6</name>
+						<id>6</id>
 					</from>
 					<tapes>1</tapes>
 				</transition>
@@ -271,186 +332,198 @@
 					<name>q6</name>
 					<id>6</id>
 				</state>
-			</structure>
-			<structure type="tape_alph">
-				<symbol>X</symbol>
-				<symbol>Y</symbol>
-				<symbol>Z</symbol>
-				<symbol>a</symbol>
-				<symbol>b</symbol>
-				<symbol>c</symbol>
-				<symbol>□</symbol>
-			</structure>
-			<structure type="blank_symbol">
-				<value>□</value>
-			</structure>
-			<structure type="final_states">
 				<state>
-					<name>q6</name>
-					<id>6</id>
-				</state>
-			</structure>
-			<structure type="start_state">
-				<state>
-					<name>q0</name>
-					<id>0</id>
+					<name>q7</name>
+					<id>7</id>
 				</state>
 			</structure>
 			<structure type="input_alph">
+				<symbol>0</symbol>
+				<symbol>1</symbol>
 				<symbol>X</symbol>
-				<symbol>Y</symbol>
-				<symbol>Z</symbol>
-				<symbol>a</symbol>
-				<symbol>b</symbol>
 				<symbol>c</symbol>
+			</structure>
+			<structure type="blank_symbol">
+				<value>□</value>
 			</structure>
 		</structure>
 		<state_point_map>
 			<state_point>
 				<state>0</state>
 				<point>
-					<x>282.0</x>
-					<y>222.0</y>
+					<x>538.0</x>
+					<y>212.0</y>
 				</point>
 			</state_point>
 			<state_point>
 				<state>1</state>
 				<point>
-					<x>441.0</x>
-					<y>108.0</y>
+					<x>683.0</x>
+					<y>116.0</y>
 				</point>
 			</state_point>
 			<state_point>
 				<state>2</state>
 				<point>
-					<x>694.0</x>
-					<y>110.0</y>
+					<x>932.0</x>
+					<y>121.0</y>
 				</point>
 			</state_point>
 			<state_point>
 				<state>3</state>
 				<point>
-					<x>873.0</x>
-					<y>222.0</y>
+					<x>1085.0</x>
+					<y>196.0</y>
 				</point>
 			</state_point>
 			<state_point>
 				<state>4</state>
 				<point>
-					<x>401.0</x>
-					<y>378.0</y>
+					<x>662.0</x>
+					<y>359.0</y>
 				</point>
 			</state_point>
 			<state_point>
 				<state>5</state>
 				<point>
-					<x>693.0</x>
-					<y>381.0</y>
+					<x>420.0</x>
+					<y>308.0</y>
 				</point>
 			</state_point>
 			<state_point>
 				<state>6</state>
 				<point>
-					<x>849.0</x>
-					<y>370.0</y>
+					<x>960.0</x>
+					<y>375.0</y>
+				</point>
+			</state_point>
+			<state_point>
+				<state>7</state>
+				<point>
+					<x>536.0</x>
+					<y>423.0</y>
 				</point>
 			</state_point>
 		</state_point_map>
 		<control_point_map>
 			<control_point>
-				<from>2</from>
-				<to>2</to>
-				<point>
-					<x>694.0</x>
-					<y>40.0</y>
-				</point>
-			</control_point>
-			<control_point>
-				<from>3</from>
-				<to>3</to>
-				<point>
-					<x>873.0</x>
-					<y>152.0</y>
-				</point>
-			</control_point>
-			<control_point>
 				<from>3</from>
 				<to>0</to>
 				<point>
-					<x>577.5</x>
-					<y>222.0</y>
+					<x>814.0814801209501</x>
+					<y>254.95051393673435</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>6</from>
+				<to>3</to>
+				<point>
+					<x>1022.5</x>
+					<y>285.5</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>5</from>
+				<to>5</to>
+				<point>
+					<x>420.0</x>
+					<y>238.0</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>0</from>
+				<to>4</to>
+				<point>
+					<x>600.0</x>
+					<y>285.5</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>2</from>
+				<to>2</to>
+				<point>
+					<x>932.0</x>
+					<y>51.0</y>
 				</point>
 			</control_point>
 			<control_point>
 				<from>1</from>
 				<to>2</to>
 				<point>
-					<x>567.5</x>
-					<y>109.0</y>
+					<x>807.5</x>
+					<y>118.5</y>
 				</point>
 			</control_point>
 			<control_point>
-				<from>5</from>
-				<to>5</to>
+				<from>3</from>
+				<to>3</to>
 				<point>
-					<x>693.0</x>
-					<y>311.0</y>
+					<x>1085.0</x>
+					<y>126.0</y>
 				</point>
 			</control_point>
 			<control_point>
-				<from>4</from>
-				<to>4</to>
+				<from>6</from>
+				<to>6</to>
 				<point>
-					<x>401.0</x>
-					<y>308.0</y>
+					<x>994.0</x>
+					<y>529.0</y>
 				</point>
 			</control_point>
 			<control_point>
 				<from>1</from>
 				<to>1</to>
 				<point>
-					<x>441.0</x>
-					<y>38.0</y>
+					<x>683.0</x>
+					<y>46.0</y>
 				</point>
 			</control_point>
 			<control_point>
 				<from>4</from>
-				<to>5</to>
+				<to>4</to>
 				<point>
-					<x>547.0</x>
-					<y>379.5</y>
+					<x>658.0</x>
+					<y>531.0</y>
 				</point>
 			</control_point>
 			<control_point>
 				<from>2</from>
 				<to>3</to>
 				<point>
-					<x>783.5</x>
-					<y>166.0</y>
+					<x>1008.5</x>
+					<y>158.5</y>
 				</point>
 			</control_point>
 			<control_point>
-				<from>0</from>
-				<to>4</to>
+				<from>5</from>
+				<to>7</to>
 				<point>
-					<x>341.5</x>
-					<y>300.0</y>
+					<x>478.0</x>
+					<y>365.5</y>
 				</point>
 			</control_point>
 			<control_point>
 				<from>0</from>
 				<to>1</to>
 				<point>
-					<x>361.5</x>
-					<y>165.0</y>
+					<x>610.5</x>
+					<y>164.0</y>
 				</point>
 			</control_point>
 			<control_point>
-				<from>5</from>
+				<from>4</from>
 				<to>6</to>
 				<point>
-					<x>771.0</x>
-					<y>375.5</y>
+					<x>811.0</x>
+					<y>367.0</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>0</from>
+				<to>5</to>
+				<point>
+					<x>479.0</x>
+					<y>260.0</y>
 				</point>
 			</control_point>
 		</control_point_map>
